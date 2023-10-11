@@ -31,7 +31,7 @@ export const DateInput = ({ label, ...props }: IDateInput) => {
       <label style={labelStyle} htmlFor={label}>
         {label}
       </label>
-      <input style={inputStyle} id={label} type="date" />
+      <input style={inputStyle} id={label} type="date" {...props} />
     </div>
   );
 };
