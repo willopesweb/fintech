@@ -18,7 +18,7 @@ export const Header = () => {
   }, [location]);
   return (
     <header className="mb">
-      <div className="daterangemb">
+      <div className="daterange mb">
         <DateRange />
         <h1 className="box bg-3">{title}</h1>
       </div>
