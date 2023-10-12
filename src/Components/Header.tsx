@@ -1,14 +1,14 @@
 import React from "react";
-import { useData } from "../Context/DataContext";
 import { Meses } from "./Meses";
 import { DateRange } from "./DateRange";
 
 export const Header = () => {
-  const { data } = useData();
+  const [title, setTitle] = React.useState("Resumo");
   return (
     <header className="mb">
-      <div className="mb">
+      <div className="daterangemb">
         <DateRange />
+        <h1 className="box bg-3">{title}</h1>
       </div>
       <Meses />
     </header>
